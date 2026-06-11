@@ -1,0 +1,15 @@
+# Starship
+eval "$(starship init bash)"
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Aliases
+alias ls='eza --icons'
+alias ll='eza --icons -la'
+alias cat='batcat'
+alias ..='cd ..'
+alias ...='cd ../..'
+
+# Zoxide
+eval "$(zoxide init bash)"

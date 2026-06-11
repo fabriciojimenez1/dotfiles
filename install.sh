@@ -29,5 +29,7 @@ else
   mkdir -p ~/.config/ghostty
   ln -sf ~/dotfiles/ghostty.config ~/.config/ghostty/config
 fi
-
+if [ "$OS" = "Linux" ]; then
+  ln -sf ~/dotfiles/.bashrc.linux ~/.bashrc
+fi
 echo "✅ Listo! Reiniciá la terminal."
