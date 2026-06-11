@@ -22,8 +22,12 @@ if [ "$OS" = "Linux" ]; then
 fi
 
 # Symlinks
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-mkdir -p ~/.config/ghostty
-ln -sf ~/dotfiles/ghostty.config ~/.config/ghostty/config
+if [ "$OS" = "Linux" ]; then
+  ln -sf ~/dotfiles/.zshrc.linux ~/.zshrc
+else
+  ln -sf ~/dotfiles/.zshrc ~/.zshrc
+  mkdir -p ~/.config/ghostty
+  ln -sf ~/dotfiles/ghostty.config ~/.config/ghostty/config
+fi
 
 echo "✅ Listo! Reiniciá la terminal."
