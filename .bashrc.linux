@@ -13,3 +13,4 @@ alias ...='cd ../..'
 
 # Zoxide
 eval "$(zoxide init bash)"
+[ -f /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash

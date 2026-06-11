@@ -16,7 +16,7 @@ fi
 
 # Dependencias según OS
 if [ "$OS" = "Linux" ]; then
-  sudo apt install -y zsh-autosuggestions zsh-syntax-highlighting zoxide
+  sudo apt install -y zsh-autosuggestions zsh-syntax-highlighting zoxide eza bat fzf
   echo "source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
   echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 fi
